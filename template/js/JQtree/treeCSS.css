@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* 根ul */
+.lightTreeview {
+	list-style: none;
+}
+/* 所有下级的菜单 */
+.lightTreeview ul,.lightTreeview ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+/* 所有的li */
+.lightTreeview li {
+	font-size: 12px;
+	line-height: 16px;
+	padding: 3px 0 3px 16px;
+	margin: 0;
+	background: url(images/treeview-default-line.gif) 0 0 no-repeat;
+}
+.lightTreeview li div {
+	width:90%;
+}
+/* li分枝结束 */
+.lightTreeview li.branch-last {
+	background-position: 0 -1766px;
+}
+/* li节点 */
+.lightTreeview li.node-normal {
+	background-position: 0 -176px;
+}
+
+/* li节点结束.默认为- */
+.lightTreeview li.node-last {
+	background: url(images/treeview-default.gif) 0 -111px no-repeat;
+}
+.lightTreeview li.node-last-open {
+	background-position: 0 -111px;
+}
+.lightTreeview li.node-last-close {
+	background-position: -32px -67px;
+}
+
+/* li去除一切线条 */
+.treeview-noline li {
+	background-image:none;
+}
+.treeview-noline li.node-last {
+	background: url(images/treeview-default.gif) -16px -89px no-repeat;
+}
+.treeview-noline li.node-last-open {
+	background-position: -16px -89px;
+}
+.treeview-noline li.node-last-close {
+	background-position: -48px -45px;
+}
+
+
+/* 节点+-图标 */
+.lightTreeview li span.flex-ico {
+	background-image: url(images/treeview-default.gif);
+	background-repeat: no-repeat;
+	float:left;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	margin-left:-16px;
+	background-position: -64px -23px;
+}
+.lightTreeview li span.flex-open {
+	background-position: -64px -23px;
+}
+.lightTreeview li span.flex-close {
+	background-position: -80px -1px;
+}
+
+.lightTreeview li span.flex-none {
+	background-position: 0 0;
+}
+.treeview-noline li span.flex-close {
+	background-position: -48px -46px;
+}
+.treeview-noline li span.flex-open {
+	background-position: -16px -90px;
+}
+
+/* 文件目录样式 */
+.treeFile .treeview-file {
+	padding-left: 18px;
+	background:url(images/file.png) 0 0 no-repeat;
+}
+.treeFile .treeview-folder {
+	padding-left: 18px;
+	background:url(images/folder-open.png) 0 0 no-repeat;
+}
+.treeFile .treeview-folder-close {
+	padding-left: 18px;
+	background:url(images/folder-close.png) 0 0 no-repeat;
+}
+.JQtreeOrange { color:#F00;}

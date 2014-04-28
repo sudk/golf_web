@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>衡阳联通平安校园电子安防平台-教务处主任-考勤</title>
+<link href="css/frame_reset.css" rel="stylesheet" type="text/css" />
+<link href="css/frame_layout.css" rel="stylesheet" type="text/css" />
+<link href="css/image.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.overall.js"></script>
+</head>
+
+<body>
+<!-- header start -->
+<div id="header">
+    <div id="header-top">
+        <div class="floatL"><img src="images/logo.gif" /></div>
+        <div class="menu">
+            <a href="#">王主任</a> ｜
+            <a href="#">退出</a> ｜
+            <a href="#">个人信息</a> ｜
+            <a href="#">通信录</a> |
+            <a href="#">帮助</a>|
+            <a href="#">建议</a>
+        </div>
+    </div>
+    <div id="nav" class="nav">
+        <div class="nav-cnt">
+            <ul>
+                <li class="master">
+                    <a class="name" href="#"><strong>首页</strong></a>
+                    <p class="subnav">
+                        <span>常用功能</span>
+                        <a href="#" target="_blank">发布公告</a> |
+                        <a href="#" target="_blank">德育考评</a> |
+                        <a href="#" target="_blank">考勤记录</a> |
+                        <a href="#" target="_blank">短信发送</a>
+                    </p>
+                </li>
+                <li class="master">
+                    <a class="name" href="campus_my.html"><strong>我的学校</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>基本信息</span></a></li>
+                        <li><a href="#"><span>班级信息</span></a></li>
+                        <li><a href="#"><span>学生信息</span></a></li>
+                        <li><a href="#"><span>出入监控</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="campus_sms.html"><strong>信息管理</strong></a>  
+                </li>
+                <li class="master">
+                    <a class="name" href="campus_exam.html"><strong>成绩管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>考试信息</span></a></li>
+                        <li><a href="#"><span>成绩录入</span></a></li>
+                        <li><a href="#"><span>成绩发送</span></a></li>
+                        <li><a href="#"><span>成绩统计</span></a></li>
+                        <li><a href="#"><span>成绩查询</span></a></li>
+                    </ul>
+                </li>
+                <li class="master current">
+                    <a class="name" href="campus_att.html"><strong>考勤管理</strong></a>
+                    <ul class="subnav">
+                        <li ><a href="campus_att.html"><span>考勤记录</span></a></li>
+                        <li><a href="#"><span>报表统计</span></a></li>
+                        <li><a href="#"><span>出入监控</span></a></li>
+                        <li><a href="#"><span>请假管理</span></a></li>
+                        <li class="current"><a href="att_rule.html"><span>考勤规则</span></a></li>
+                    </ul>
+                </li>
+                <li class="separator"> | </li>
+                <li class="master">
+                    <a class="name" href="campus_staff.html"><strong>教师管理</strong></a>
+                	<ul class="subnav">
+                        <li class="current"><a href="#"><span>教师信息</span></a></li>
+                        <li><a href="#"><span>添加教师</span></a></li>
+                        <li><a href="#"><span>分组管理</span></a></li>
+                        <li><a href="#"><span>权限管理</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="campus_student.html"><strong>学生管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>学生信息</span></a></li>
+                        <li><a href="#"><span>德育考评</span></a></li>
+                        <li><a href="#"><span>学生分组</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="campus_manage.html"><strong>校园管理</strong></a>
+               		<ul class="subnav">
+                        <li class="current"><a href="#"><span>基本信息</span></a></li>
+                        <li><a href="#"><span>年级管理</span></a></li>
+                        <li><a href="#"><span>班级管理</span></a></li>
+                        <li><a href="#"><span>宿舍管理</span></a></li>
+                        <li><a href="#"><span>学科管理</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- content start -->
+<div id="content">
+	<div class="tab">
+    	<ul class="tab-label">
+        	<li class="current"><a href="att_rule.html">查看设置</a></li>	
+        	<li><a href="att_newrule.html">添加考勤规则</a></li>	
+            <li><a href="att_holiday.html">假期管理</a></li>	
+        </ul>
+        <div class="more"><a href="">帮助建议</a></div>
+        <div class="tab-main">
+
+            <ul class="title-box sift" style="margin:-10px 0px 10px;">
+            	<li >
+                	<span class="sift-title">按生效范围：</span>
+                    <a href="#" class="air">所有</a><a href="#">全校</a><a href="#">初一</a><a href="#">初二</a><a href="#">初三</a>
+
+                    <input type="text" value="输入规则名称搜索" class="grayTips" />
+                    <input type="submit" value="" class="search_btn" />
+                </li>
+            </ul>
+                
+        	<table class="formList">
+                <tr class="line">
+                    <td class="name">上午考勤</td>
+                    <td class="name"><a href="">下移</a></td>
+                    <td class="value"></td>
+                    <td class="name"></td>
+                    <td class="value"></td>                 
+                    <td class="value"></td>
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">考勤时间：</td>
+                    <td class="value" colspan="3">1月20日-6月20日</td>                    
+                    <td class="value"></td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">考勤范围：</td>
+                    <td class="value" colspan="3">全校</td>                    
+                    <td class="value"></td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">考勤周期：</td>
+                    <td class="value" colspan="3">周一、周二、周三、周四、周五
+                    </td>                    
+                    <td class="value"></td>                                    
+                </tr>                                
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">上学时间：</td>
+                    <td class="value">8:00</td>
+                    <td class="name">9:00</td>
+                    <td class="value">之后刷卡记为旷课</td> 
+                    <td class="value">8:00-9:00之间进校为迟到</td>                 
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">放学时间：</td>
+                    <td class="value">18:00</td>
+                    <td class="name"></td>
+                    <td class="value"></td>  
+                    <td class="value">18:00之前离校记为早退</td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                 	<td class="name"></td>
+                    <td class="value" colspan=3>发送到校短信 | 发送未到校短信</td>                
+                    <td class="value">9:00发送未到校短信提醒</td>                                    
+                </tr>
+ 
+ 				<tr class="line">
+                    <td class="name">下午考勤</td>
+                    <td class="name"><a href="">上移</a>|<a href="">下移</a></td>
+                    <td class="value"></td>
+                    <td class="name"></td>
+                    <td class="value"></td>                 
+                    <td class="value"></td>
+                </tr>
+                 <tr>
+                 	<td class="name"></td>
+                    <td class="name">实施日期：</td>
+                    <td class="value"><select class="select"><option>1月20日</option></select></td>
+                    <td class="name">结束时间：</td>
+                    <td class="value"><select class="select"><option>6月20日</option></select></td> 
+                    <td class="value"></td>                 
+                </tr>                   
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">考勤范围：</td>
+                    <td class="value" colspan="3"><input type="checkbox" checked/>全校
+                    <input type="checkbox"  />初一
+                    <input type="checkbox"  />初二
+                    <input type="checkbox"  />初三
+                    </td>                    
+                    <td class="value"></td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">生效时间：</td>
+                    <td class="value" colspan="3"><input type="checkbox" />全选
+                    <input type="checkbox" checked />周一
+                    <input type="checkbox" checked />周二
+                    <input type="checkbox" checked />周三
+                    <input type="checkbox" checked />周四
+                    <input type="checkbox" checked />周五
+                    <input type="checkbox" />周六
+                    <input type="checkbox" />周日
+                    </td>                    
+                    <td class="value"></td>                                    
+                </tr>                                
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">上学时间：</td>
+                    <td class="value"><select class="select-time"><option>8:00</option></select></td>
+                    <td class="name"><select><option>9:00</option></select></td>
+                    <td class="value">之后刷卡记为旷课</td> 
+                    <td class="value">8:00-9:00之间进校为迟到</td>                 
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">放学时间：</td>
+                    <td class="value"><select><option>18:00</option></select></td>
+                    <td class="name"></td>
+                    <td class="value"></td>  
+                    <td class="value">18:00之前离校记为早退</td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                 	<td class="name"></td>
+                    <td class="value" colspan=3><input type="checkbox" checked />发送到校短信
+                    <input type="checkbox" checked />发送离校短信
+                    <input type="checkbox" checked />发送未到校短信</td>                
+                    <td class="value">9:00发送未到校短信提醒</td>                                    
+                </tr> 
+            <tr class="line">
+                    <td class="name">晚课考勤</td>
+                    <td class="name"><a href="">上移</a></td>
+                    <td class="value"></td>
+                    <td class="name"></td>
+                    <td class="value"></td>                 
+                    <td class="value"></td>
+                </tr>
+                 <tr>
+                 	<td class="name"></td>
+                    <td class="name">实施日期：</td>
+                    <td class="value"><select class="select"><option>1月20日</option></select></td>
+                    <td class="name">结束日期：</td>
+                    <td class="value"><select class="select"><option>6月20日</option></select></td> 
+                    <td class="value"></td>                 
+                </tr>                
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">考勤范围：</td>
+                    <td class="value" colspan="3"><input type="checkbox"/>全校
+                    <input type="checkbox"  />初一
+                    <input type="checkbox"  />初二
+                    <input type="checkbox"  checked/>初三
+                    </td>                    
+                    <td class="value"></td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">生效时间：</td>
+                    <td class="value" colspan="3"><input type="checkbox" />全选
+                    <input type="checkbox" checked />周一
+                    <input type="checkbox" checked />周二
+                    <input type="checkbox" checked />周三
+                    <input type="checkbox" checked />周四
+                    <input type="checkbox" checked />周五
+                    <input type="checkbox" />周六
+                    <input type="checkbox" />周日
+                    </td>                    
+                    <td class="value"></td>                                    
+                </tr>                                
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">上学时间：</td>
+                    <td class="value"><select class="select-time"><option>8:00</option></select></td>
+                    <td class="name"><select><option>9:00</option></select></td>
+                    <td class="value">之后刷卡记为旷课</td> 
+                    <td class="value">8:00-9:00之间进校为迟到</td>                 
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                    <td class="name">放学时间：</td>
+                    <td class="value"><select><option>18:00</option></select></td>
+                    <td class="name"></td>
+                    <td class="value"></td>  
+                    <td class="value">18:00之前离校记为早退</td>                                    
+                </tr>
+                <tr>
+                 	<td class="name"></td>
+                 	<td class="name"></td>
+                    <td class="value" colspan=3><input type="checkbox" checked />发送到校短信
+                    <input type="checkbox" checked />发送离校短信
+                    <input type="checkbox" checked />发送未到校短信</td>                
+                    <td class="value">9:00发送未到校短信提醒</td>                                    
+                </tr>            
+				<tr class="btnBox">
+                    <td class="name"></td>
+                    <td class="name"></td>
+                    <td colspan="3">
+                        <span class="sBtn">
+                            <a class="left">保存修改</a><a class="right"></a>
+                        </span>
+                        <span class="sBtn-cancel">
+                            <a class="left">还原修改</a><a class="right"></a>
+                        </span>
+                    </td>
+                    <td class="value"></td>   
+                </tr>  
+            </table>
+        </div>
+    </div>
+</div>
+<!-- content end -->
+
+<!-- footer start -->
+<div id="footer">Copyright © 2011 by 创博股份. All Rights Reserved</div>
+<!-- footer end -->
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	// 主菜单切换
+	var a = $('#nav').find('.master');
+	a.click(function(){
+		a.removeClass('current');
+		$(this).addClass('current');
+	});
+
+	// 子菜单切换
+	var b = $('#nav').find('ul.subnav').find('li');
+	b.click(function(){
+		b.removeClass('current');
+		$(this).addClass('current');
+	})
+})
+</script>

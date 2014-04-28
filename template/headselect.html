@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>一卡通新框架</title>
+<link href="css/frame_reset.css" rel="stylesheet" type="text/css" />
+<link href="css/frame_layout.css" rel="stylesheet" type="text/css" />
+<link href="css/image.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.overall.js"></script>
+</head>
+<body>
+    <table class="formList">
+        <tr><td>姓名：<span id="1230_name">苏某某</span></td><td>手机号：13335130151</td><td><a href="javascript:close('1230_name');">选择</a></td></tr>
+        <tr><td>姓名：苏某某</td><td>手机号：13335130151</td><td><a href="javascript:parent.closeWindown();">选择</a></td></tr>
+        <tr><td>姓名：苏某某</td><td>手机号：13335130151</td><td><a href="javascript:parent.closeWindown();">选择</a></td></tr>
+        <tr><td>姓名：苏某某</td><td>手机号：13335130151</td><td><a href="javascript:parent.closeWindown();">选择</a></td></tr>
+    </table>
+</body>
+<script type="text/javascript">
+    function close(id){
+        parent.$("#staff").val($('#'+id).html());
+        $("#windown-close").click();
+    }
+</script>
+</html>

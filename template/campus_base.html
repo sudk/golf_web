@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>平安校园</title>
+    <link href="css/frame_reset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/frame_layout.css" rel="stylesheet" type="text/css"/>
+    <link href="css/image.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.overall.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+<div id="header">
+    <div id="header-top">
+        <div class="floatL"><img src="images/logo.gif"/></div>
+        <div class="menu">
+            <a href="#">平安校园</a> ｜
+            <a href="#" class="msg">消息 <em>2</em></a> ｜
+            <a href="#">帮助中心</a> ｜
+            <a href="#">建议</a> |
+            <a href="#">安全退出</a>
+        </div>
+    </div>
+    <div id="nav" class="nav">
+        <div class="nav-cnt">
+            <ul>
+                <li class="master">
+                    <a class="name" href="#"><strong>首页</strong></a>
+
+                    <p class="subnav">
+                        <span>常用功能</span>
+                        <a href="#" target="_blank">考勤统计</a> |
+                        <a href="#" target="_blank">用户挂失</a> |
+                        <a href="#" target="_blank">消费统计</a> |
+                        <a href="#" target="_blank">用户解挂</a> |
+                        <a href="#" target="_blank">添加机具</a> |
+                        <a href="#" target="_blank">群发短信</a>
+                    </p>
+                </li>
+                <li class="master current">
+                    <a class="name" href="#"><strong>校园管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="./campus_base.html"><span>基本信息</span></a></li>
+                        <li><a href="./campus_grade.html"><span>年级管理</span></a></li>
+                        <li><a href="./campus_classes.html"><span>班级管理</span></a></li>
+                        <li><a href="./campus_dorm.html"><span>宿舍管理</span></a></li>
+                        <li><a href="./campus_course.html"><span>学科管理</span></a></li>
+                        <li><a href="./campus_notice_period.html"><span>离到校短信规则</span></a></li>
+                        <li><a href="./campus_notice_period.html"><span>机具管理</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="./campus_base.html"><strong>学生管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>基础信息</span></a></li>
+                        <li><a href="#"><span>组织结构</span></a></li>
+                        <li><a href="#"><span>成员管理</span></a></li>
+                        <li><a href="#"><span>机具管理</span></a></li>
+                        <li><a href="#"><span>操作员管理</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="#"><strong>老师管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>报表中心1</span></a></li>
+                        <li><a href="#"><span>报表中心2</span></a></li>
+                        <li><a href="#"><span>报表中心3</span></a></li>
+                        <li><a href="#"><span>报表中心4</span></a></li>
+                    </ul>
+                </li>
+                <li class="separator"> |</li>
+                <li class="master">
+                    <a class="name" href="#"><strong>消息中心</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- content start -->
+<div id="content">
+    <div class="tab">
+        <ul class="tab-label">
+            <li class="current"><a href="./campus_base.html">基本信息</a></li>
+            <li><a href="./campus_base_notice.html">离到校短信规则设置</a></li>
+            <li><a href="./campus_base_term.html">机具管理</a></li>
+        </ul>
+        <div class="tab-main">
+
+            <table class="formList">
+                <tr>
+                    <td class="name">全称：</td>
+                    <td class="value"><span style="margin:0px;padding:0px;" id="name">山东经贸大学</span><span><a
+                            href="javascript:void(0);" onclick="toedit('name',this);" flag='0'>修改</a></span> <span
+                            id="cancel_name" style='margin:0px;padding:0px;display:none;'><a
+                            style='margin:0px;padding:0px;' href="javascript:void(0);"
+                            onclick="cancel('name',this);">取消</a></span></td>
+                </tr>
+                <tr>
+                    <td class="name">简称：</td>
+                    <td class="value">山经</td>
+                </tr>
+                <tr>
+                    <td class="name">地址：</td>
+                    <td class="value">山东省济南市二环东路7366号</td>
+                    <td class="name">省份：</td>
+                    <td class="value">山东</td>
+                    <td class="name">城市：</td>
+                    <td class="value">济南</td>
+                </tr>
+                <tr>
+                    <td class="name">联系人：</td>
+                    <td class="value">王某某</td>
+                    <td class="name">联系电话：</td>
+                    <td class="value">13335130151</td>
+                    <td class="name"></td>
+                    <td class="value"></td>
+                </tr>
+                <tr class="line">
+                    <td class="name">在学生：</td>
+                    <td class="value">2400</td>
+                    <td class="name">教职工：</td>
+                    <td class="value">300</td>
+                    <td class="name">班级数：</td>
+                    <td class="value">700</td>
+                </tr>
+                <tr>
+                    <td class="name">业务经理：</td>
+                    <td class="value">王某某</td>
+                    <td class="name">电话：</td>
+                    <td class="value">13335130151</td>
+                    <td class="name"></td>
+                    <td class="value"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- content end -->
+
+<!-- footer start -->
+<div id="footer">Copyright © 2011 by 创博股份. All Rights Reserved</div>
+<!-- footer end -->
+</body>
+<script type="text/javascript">
+    function toedit(id, obj) {
+        var f = $(obj).attr('flag');
+        if (f == 0) {
+            edit(id, obj);
+        } else {
+            save(id, obj);
+        }
+    }
+    function edit(id, obj) {
+        var ht = $('#' + id).html();
+        var w = $('#' + id).width();
+        var str = "<input type='text'  id='input_" + id + "' value='" + ht + "'>";
+        $('#' + id).html(str);
+        $('#input_' + id).width(w);
+        $(obj).html("保存");
+        $('#cancel_name').show();
+        $(obj).attr('flag', 1);
+    }
+    function save(id, obj) {
+        var ht = $('#input_' + id).val();
+        $('#' + id).html(ht);
+        $(obj).html("修改");
+        $('#cancel_name').hide();
+        $(obj).attr('flag', 0);
+    }
+</script>
+</html>

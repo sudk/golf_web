@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* layout > 整体布局
+--------------------------------------------------------------------*/
+#header { z-index:3100; margin-top:10px;}
+#header .menu { float:right; margin-top:10px;}
+#header .menu a { height:20px; line-height:20px; padding:0 5px; display:inline-block; text-align:center; color:#999;}
+#header .menu a:hover { color:#F00;}
+#header .menu .msg em { font-weight:bold; font-size:13px; line-height:18px; _vertical-align:middle; background-color:#F00; color:#fff; width:20px; height:20px; display:inline-block; border-radius:10px; text-shadow:none;}
+#content div#left { float:left; width:188px;}
+#content div#right { float:right; width:782px;}
+#footer { margin-top:20px; height:20px; border-top:1px #ddd solid; padding-top:5px; text-align:center; color:#999; line-height:20px;}
+
+
+/* nav > 主导航
+--------------------------------------------------------------------*/
+.nav { overflow:hidden; position:relative; margin-top:10px; width:100%;}
+.nav-nosub { height:42px;}
+.nav-cnt { height:80px; padding-left:10px;}
+.nav-cnt ul { overflow:hidden; height:100%;}
+.master { float:left; display:inline; margin:7px 5px 0 0;}
+.master .name { float:left; font-size:14px; text-align:center; color:#fff;}
+.master .name strong { padding:8px 15px 13px; display:inline-block; font-weight:bold; text-shadow:none;}
+.master .name:hover, .master .name:active
+{ color:#fff;}
+ul.subnav, p.subnav
+{ display:none; position:absolute; top:46px; left:10px; background:none;}
+.subnav a:hover { color:#868686;}
+p.subnav { padding:7px 15px; color:#999;}
+p.subnav span { margin-right:10px;}
+p.subnav a { padding:0 5px; display:inline-block;}
+p.subnav a:hover { background:none; color:#F00;}
+ul.subnav li { float:left; display:inline; margin-right:10px;}
+ul.subnav a { float:left; color:#868686; text-align:center;}
+ul.subnav span { padding:0 15px; height:28px; line-height:28px; overflow:hidden; float:left;}
+.current .name { color:#696969;}
+.current .name:hover, .current .name:active
+{ color:#696969;}
+.current .subnav { display:block;}
+.subnav .current a span { text-shadow:1px 1px 0 rgba(255,255,255,0.5);}
+.separator { color:#f9d3ae; font-size:14px; line-height:14px; font-weight:bold; float:left; margin:14px 5px 0 0; *margin:13px 5px 0 0; margin:13px 5px 0 0\0; text-shadow:none;}
+
+
+/* lc/lc-app > 左边栏/左边栏app
+--------------------------------------------------------------------*/
+.lc, .lc-app, .rc
+{ border:1px #ccc solid; border-top:none; margin-top:10px;}
+.lc-title, .lc-app-title, .rc-title, .title
+{ height:32px; line-height:32px; font-weight:bold; padding-left:10px; border-bottom:1px #ccc solid; font-size:14px; border-top:1px #ccc solid; position:relative;}
+.lc-title a.setting, .lc-app-title a.setting, .rc-title a.setting, .title a.setting
+{ width:16px; height:16px; display:inline-block; background:url(../images/setting.gif) no-repeat; float:right; margin:7px 10px 0 0;}
+.lc-title a.setting:hover, .lc-app-title a.setting:hover, .rc-title a.setting:hover, .title a.setting:hover
+{ background-position:-27px 0;}
+.lc-title .more, .lc-app-title .more, .rc-title .more, .title .more
+{ display:inline-block; float:right; margin-right:10px; font-size:12px; font-weight:normal;}
+.lc-title .more a, .lc-app-title .more a, .rc-title .more a, .title .more a
+{ font-size:12px; font-weight:normal;}
+.lc-main, .lc-app-main
+{ height:auto; overflow:hidden; padding:5px 10px;}
+.lc-app-main .li-hover, .lc-app-main .current
+{ background-color:#f5f5f5; color:#0088cc;}
+.lc-main li { height:22px; line-height:22px;}
+.lc-content-title {  font-size:20px; font-weight:bold; }
+.lc-app-title { cursor:pointer;}
+.lc-app-title-noBorder { border-bottom:none;}
+.up_ico, .down_ico { position:absolute; right:10px; top:11px;}
+.lc-app-main { padding:0;}
+.lc-app-main li { height:auto; padding:6px 10px; font-size:14px; cursor:pointer;}
+.lc-app-main li img { vertical-align:middle; margin-right:10px;}
+
+
+/* rc/rc-app > 右边栏/右边栏app
+--------------------------------------------------------------------*/
+.rc-title .more input, .title .more input, .tool-box input, .sift li input
+{ height:16px; line-height:16px; vertical-align:middle; float:left; margin-top:6px; padding-left:2px;}
+.rc-title .more .search_btn, .title .more .search_btn, .tool-box .search_btn, .sift li .search_btn
+{ background:none; border:none; background:url(../images/search.png) no-repeat; height:16px; line-height:16px; width:16px; margin:8px 0 0 5px; float:left;}
+.rc-title .more select, .title .more select, .tool-box select, .sift li select
+{ height:20px; line-height:20px; margin:6px 5px 0 0; float:left; vertical-align:middle;}
+.rc-title .link, .title .link
+{ font-size:12px; font-weight:normal; margin:0 15px; float:left;}
+.rc-title .link a, .title .link a
+{ font-size:12px; font-weight:normal; margin:0 5px;}
+.rc-app-main { padding:10px;}
+.rc-app-main li { width:232px; float:left; padding:10px; cursor:pointer; display:inline-block;}
+.rc-app-main li img { width:54px; height:54px; float:left;}
+.rc-app-main li .text { margin-left:10px; width:168px; float:left;}
+.rc-app-main li .text p { margin-top:5px; line-height:18px; height:36px; overflow:hidden;}
+.rc-app-main .li-hover { background-color:#f5f5f5; color:#0088cc;}
+
+
+/* title/tool-box > 两种独立标题栏的形式，在有标题的时候使用title,在只有搜索功能的时候用tool-box
+--------------------------------------------------------------------*/
+.title { margin-top:10px; position:relative; height:40px; line-height:38px; border:1px #ddd solid;}
+.title .more { margin-top:4px;}
+.tool-box { position:relative; height:32px; line-height:32px; border:1px #ddd solid; padding:4px 10px;}
+.tool-box span { float:left; margin-right:10px;}
+
+.txt-title { margin-top:10px; position:relative; height:30px; line-height:28px; font-size:14px; font-weight:bold; border-bottom:1px #ccc dotted;}
+.txt-content{  height:auto; background-color:#fdfdf5; font-size:16px;}
+.txt-content li { padding:10px; display:inline-block;  margin-bottom:10px;}
+.txt-content li .text { margin-left:10px;}
+
+/* tab > 选项卡
+--------------------------------------------------------------------*/
+.tab { margin-top:10px; position:relative; width:100%; padding-top:30px;}
+.tab .tab-label { position:absolute; z-index:99; top:0; left:0;}
+.tab .tab-label li { float:left; margin-right:0px;}
+.tab .tab-label .current a, .tab .tab-label li a
+{ padding:9px 20px; cursor:pointer; display:inline-block; color:#999; border:1px #bdbdbd solid; border-bottom:none; border-right:none;}
+.tab .tab-label .current a, .tab .tab-label .li-hover a
+{ background-color:#fff; color:#F00; padding:9px 20px;}
+.tab .more { position:absolute; right:0; top:10px;}
+.tab .tab-main { overflow:hidden; clear:both; border:1px #ccc solid; padding:20px 20px 30px;}
+.tab .tab-main .more { position:relative; top:0; right:0; float:left;}
+
+
+/* dbList/dbTable > 数据列表/数据表格
+--------------------------------------------------------------------*/
+.dbList, .dbTable, .formList
+{ width:100%;}
+.dbList tbody .tr-hover, .dbTable tbody .tr-hover
+{ color:#F00;}
+.dbList tbody tr td, .dbTable tbody tr td, .dbTable tfoot tr td
+{ padding:10px; text-align:left; border-bottom:1px #eee solid; cursor:pointer;}
+.dbList tbody tr td a { margin-left:15px;}
+.dbTable { border:1px #ddd solid; margin-top:10px;}
+.dbTable thead tr th { text-align:left; border-bottom:1px #ddd solid; padding:9px 10px; font-size:14px; color:#666; background-color:#f5f5f5;}
+.dbTable tbody tr td a { margin-right:15px;}
+.dbTable tbody .tr-hover { background-color:#FBF9E6;}
+.dbTable tfoot tr td { background-color:#f5f5f5;}
+.dbTable tfoot tr td a, .dbTable tfoot tr td select { margin-right:15px;}
+.dbTable tfoot tr td a, .dbTable tfoot tr td span, .dbTable tfoot tr td select { display:inline;}
+
+
+/* formList > 表单列表
+--------------------------------------------------------------------*/
+.formList tr td { padding:5px 0; _padding:4px 0;}
+.formList tr.line td { border-bottom:1px #ccc dotted; padding-bottom:15px;}
+.formList tr td.name { text-align:right; width:100px;}
+.formList .form-name td { border-bottom:1px #ccc dotted; font-size:14px; font-weight:bold; color:#0088cc; padding:10px 0;}
+.formList tr td.value { text-align:left; width:350px;}
+.formList tr td.value span, .formList tr td.value a { margin-left:15px;}
+.formList tr td.value a { text-decoration:underline;}
+.formList tr td select { width:155px;}
+.formList tr td input { width:150px; vertical-align:middle; display:inline-block; } 
+.formList tr td input.address { width:300px;}
+.formList tr td input.mini { width:40px;}  
+.formList tr td select { width:120px; border:1px #ccc solid; height:20px; line-height:20px; background-color:#fff; vertical-align:middle; font-size:12px; font-weight:bold; font-family:Tahoma,Arial,Helvetica;}
+
+div.btnBox, .formList tr.btnBox td
+{ margin:15px 0 6px; text-align:center; padding-top:20px;}
+
+
+/* arrange > 表单列表
+--------------------------------------------------------------------*/
+.arrange div.left { width:65%; height:300px; overflow:hidden; position:relative; float:left;}
+.arrange h1 { height:26px; color:#666;}
+.arrange div.left .scroll { width:99%; border:none; background-color:#f7f7f7; overflow-x:hidden; overflow-y:scroll; border:1px #ddd solid; height:268px;}
+.arrange div.left .scroll .treeFile { margin-left:10px;}
+.arrange div.right { width:32%; float:right;}
+.arrange div.right p { margin-top:5px;}
+.arrange div.right p.line { border-bottom:1px #ccc dotted; padding-bottom:10px; margin-bottom:5px;}
+.arrange div.right p a, .arrange .right select { margin-right:8px;}
+.arrange div.right h2 { color:#666; margin-top:15px;}
+.arrange div.right .input_text { width:144px;}
+.arrange div.right select { width:150px;}
+.arrange div.right .btnBox { text-align:left;}
+
+
+/* page > 翻页
+--------------------------------------------------------------------*/
+.page { height:34px; line-height:34px; overflow:hidden; clear:both; width:100%;}
+.page a, .page .pageAir
+{ padding:1px 5px 2px; margin:0 2px; color:#F00; border:1px #F00 solid;}
+.page a:hover, .page .pageAir
+{ background-color:#F00; color:#fff;}
+.page .pageNumber { text-align:right; float:right;}
+.page .pageNumber select { float:left; margin:8px 0 0 2px;}
+
+/* title-box > 类似条件筛选的功能区域
+--------------------------------------------------------------------*/
+.title-box { margin-top:20px; position:relative;}
+.title-box h1 { clear:both; overflow:hidden; height:16px; line-height:16px; font-size:14px; padding-bottom:10px; width:100%; border-bottom:3px #ccc solid;}
+.title-box h1 em { font-size:12px; font-weight:normal; color:#0088cc;}
+.title-box h1 #switch { position:absolute; right:0; top:-5px; font-size:12px}
+.sift { padding:15px 0 5px; background-color:#f5f5f5; border:1px #ddd solid; }
+.sift li { clear:both; overflow:hidden; line-height:20px; margin-bottom:10px; }
+.sift li .sift-title { width:100px; text-align:right; display:inline-block; font-weight:bold; float:left; margin-right:15px;}
+.sift li a { display:inline-block; float:left; margin-right:5px; padding:0 10px;}
+.sift li a.air, .sift li a:hover { background-color:#F00; color:#fff; text-shadow:none;}
+.sift li input, .sift li select { margin-top:0;}
+.sift li .search_btn { margin-top:2px;}

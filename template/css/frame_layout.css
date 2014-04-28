@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+
+/* layout
+--------------------------------------------------------------------*/
+body { text-align:center; background:#fff;}
+#header, #content, #indexMain, #footer
+{ margin: 0 auto; width: 980px; text-align: left; position: relative;}
+
+
+/* font > 文字
+--------------------------------------------------------------------*/
+body{ font:12px/1 Tahoma,Arial,Helvetica; color: #111; text-shadow:1px 1px 1px rgba(255,255,255,1);}
+.colRed{ color:#F00;} .colOrange{ color:#FF7800;} .colBlue{ color:#0368A8;} .colGray { color:#bbb;} .colBold { font-weight:bold;}
+a { color:#0088cc; text-decoration:none; display:inline; cursor:pointer; text-shadow:1px 1px 0 rgba(255,255,255,1);}
+a:hover { color:#F00; text-decoration:none;}
+p { line-height:20px; text-align:justify; text-justify:inter-ideograph; clear:both; overflow:hidden;}
+h1,h2 { clear:both; overflow:hidden; padding:0; font-size:14px; line-height:16px; color:#333;}
+
+
+/* form > form组件
+--------------------------------------------------------------------*/
+label { cursor:pointer; display:inline-block; width:auto; margin:0 10px 0 5px; _margin-left:0; _line-height:12px;}
+.input_text { border:1px solid #ccc; height:20px; line-height:20px; padding-left:3px; color:#333; vertical-align:middle;}
+.input_file { background-color:#fff\9; border:1px solid #7B7B7B\9; border-color:#7B7B7B #ccc #ccc #7B7B7B\9; height:22px\9; line-height:22px; padding-left:3px\9; color:#333\9; width:240px;}
+textarea { border:1px solid #ddd; width:504px; padding:5px 8px; line-height:18px; overflow-y:hidden; overflow:visible; background-color:#fff; font-family:Tahoma; color:#999;}
+select { background-color:#fff; border:1px #bbb solid; vertical-align:middle;}
+
+
+/* sBtn > 系统按钮
+--------------------------------------------------------------------*/
+.sBtn a.left, .sBtn-cancel a.left
+	{ height:31px; line-height:2em; line-height:2.2em\9; padding-left:19px; cursor:pointer; font-size:14px; font-weight:700; color:#fff; text-shadow:none; display:inline-block; vertical-align:middle;}
+.sBtn a.right, .sBtn-cancel a.right
+	{ width:19px; height:31px; display:inline-block; cursor:pointer; vertical-align:middle;}
+.sBtn a.right { margin-right:5px;}
+.sBtn-cancel a.left { color:#666;}
+
+
+/* position > 基本定位
+--------------------------------------------------------------------*/
+.textR { text-align:right;}
+.textL { text-align:left;}
+.textC { text-align:center;}
+.floatL { float:left;}
+.floatN { float:none;}
+.floatR { float:right;}

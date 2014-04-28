@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>平安校园</title>
+<link href="css/frame_reset.css" rel="stylesheet" type="text/css" />
+<link href="css/frame_layout.css" rel="stylesheet" type="text/css" />
+<link href="css/image.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.overall.js"></script>
+</head>
+
+<body>
+
+<!-- header start -->
+<div id="header">
+    <div id="header-top">
+        <div class="floatL"><img src="images/logo.gif" /></div>
+        <div class="menu">
+            <a href="#">平安校园</a> ｜
+            <a href="#" class="msg">消息 <em>2</em></a> ｜
+            <a href="#">帮助中心</a> ｜
+            <a href="#">建议</a> |
+            <a href="#">安全退出</a>
+        </div>
+    </div>
+    <div id="nav" class="nav">
+        <div class="nav-cnt">
+            <ul>
+                <li class="master">
+                    <a class="name" href="#"><strong>首页</strong></a>
+                    <p class="subnav">
+                        <span>常用功能</span>
+                        <a href="#" target="_blank">考勤统计</a> |
+                        <a href="#" target="_blank">用户挂失</a> |
+                        <a href="#" target="_blank">消费统计</a> |
+                        <a href="#" target="_blank">用户解挂</a> |
+                        <a href="#" target="_blank">添加机具</a> |
+                        <a href="#" target="_blank">群发短信</a>
+                    </p>
+                </li>
+                <li class="master current">
+                    <a class="name" href="#"><strong>校园管理</strong></a>
+                    <ul class="subnav">
+                        <li><a href="./campus_base.html"><span>基本信息</span></a></li>
+                        <li><a href="./campus_grade.html"><span>年级管理</span></a></li>
+                        <li><a href="./campus_classes.html"><span>班级管理</span></a></li>
+                        <li><a href="./campus_dorm.html"><span>宿舍管理</span></a></li>
+                        <li><a href="./campus_course.html"><span>学科管理</span></a></li>
+                        <li class="current"><a href="./campus_notice_period.html"><span>离到校短信规则</span></a></li>
+                        <li><a href="./campus_term.html"><span>机具管理</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="./campus_base.html"><strong>学生管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>基础信息</span></a></li>
+                        <li><a href="#"><span>组织结构</span></a></li>
+                        <li><a href="#"><span>成员管理</span></a></li>
+                        <li><a href="#"><span>机具管理</span></a></li>
+                        <li><a href="#"><span>操作员管理</span></a></li>
+                    </ul>
+                </li>
+                <li class="master">
+                    <a class="name" href="#"><strong>老师管理</strong></a>
+                    <ul class="subnav">
+                        <li class="current"><a href="#"><span>报表中心1</span></a></li>
+                        <li><a href="#"><span>报表中心2</span></a></li>
+                        <li><a href="#"><span>报表中心3</span></a></li>
+                        <li><a href="#"><span>报表中心4</span></a></li>
+                    </ul>
+                </li>
+                <li class="separator"> | </li>
+                <li class="master">
+                    <a class="name" href="#"><strong>消息中心</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- content start -->
+<div id="content">
+    <!-- position start -->
+    <div id='position' style="text-align:left;margin-top:5px;">
+    当前位置：校园管理 - 年级管理 - 级部信息
+    </div>
+    <!-- position end -->
+	<div class="tab">
+    	<ul class="tab-label">
+        	<li class="current"><a href="">离到校短信规则</a></li>
+        </ul>
+        <div class="tab-main">
+            <span class="colGray">单击行进行修改</span>
+            <table class="dbList">
+                <tbody>
+                    <tr onclick="edit('time1');" id="time1"><td>时段1</td><td>从：8:00到：9：00</td><td>进门短信：您的孩子 XXX 刚刚进入校门</td><td>进门短信：您的孩子 XXX 刚刚离开校门</td><td>生效<input type="checkbox" value="0" ></td></tr>
+                    <tr><td>时段2</td><td>从：8:00到：9：00</td><td>进门短信：您的孩子 XXX 刚刚进入校门</td><td>进门短信：您的孩子 XXX 刚刚离开校门</td><td>生效<input type="checkbox" value="0" ></td></tr>
+                    <tr><td>时段3</td><td>从：8:00到：9：00</td><td>进门短信：您的孩子 XXX 刚刚进入校门</td><td>进门短信：您的孩子 XXX 刚刚离开校门</td><td>生效<input type="checkbox" value="0" ></td></tr>
+                    <tr><td>时段4</td><td>从：8:00到：9：00</td><td>进门短信：您的孩子 XXX 刚刚进入校门</td><td>进门短信：您的孩子 XXX 刚刚离开校门</td><td>生效<input type="checkbox" value="0" ></td></tr>
+                    <tr><td>时段5</td><td>从：8:00到：9：00</td><td>进门短信：您的孩子 XXX 刚刚进入校门</td><td>进门短信：您的孩子 XXX 刚刚离开校门</td><td>生效<input type="checkbox" value="0" ></td></tr>
+                    <tr><td>时段6</td><td>从：8:00到：9：00</td><td>进门短信：您的孩子 XXX 刚刚进入校门</td><td>进门短信：您的孩子 XXX 刚刚离开校门</td><td>生效<input type="checkbox" value="0" ></td></tr>
+                </tbody>
+            </table>
+            <div class="btnBox">
+                <span class="sBtn">
+                    <a class="left">添加一条</a><a class="right"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content end -->
+<link rel="stylesheet" type="text/css" href="js/JQwindow/windowCSS.css"/>
+<script type="text/javascript" src="js/JQwindow/windowJS.js"></script>
+<!-- footer start -->
+<div id="footer">Copyright © 2011 by 创博股份. All Rights Reserved</div>
+<!-- footer end -->
+</body>
+<script type="text/javascript">
+    function edit(id) {
+        tipsWindown("离到校短信规则设置", "url:get?notice_period_form.html", "450", "220", "true", "", "true", "text");
+    }
+</script>
+</html>

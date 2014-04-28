@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#content { margin-top:20px; position:relative;}
+.login .login_left { position:absolute; left:30px;}
+.login .login_right { float:right; background:url(../images/login/login_bg.gif) no-repeat; width:354px; height:380px;  margin-right:50px; _margin-right:26px; position:relative;}
+.login .login_right .title { margin:0; background:none; border:none; width:auto; padding:2px 3px 0 1px;}
+.login .login_right .title a { color:#666; width:174px; height:41px; _height:34px; float:left; text-align:center; overflow:hidden; _padding-top:7px;}
+.login .login_right .title a img { vertical-align:middle; margin-right:10px;}
+.login .login_right .title .air_1 { background:url(../images/login/login_air.gif) no-repeat; border-right:1px #999 solid;}
+.login .login_right .title .air_2 { background:url(../images/login/login_air.gif) right 0 no-repeat; border-left:1px #999 solid;}
+.login .login_right .login_box { position:absolute; top:70px; left:50px; width:252px;}
+.login .login_right .login_box li { overflow:hidden; clear:both; margin-bottom:15px;}
+.login .login_right .login_box li span { display:inline-block; margin-right:15px;}
+.login .login_right .login_box li input  { width:190px; border:1px #ccc solid; height:26px; line-height:26px; background-color:#fff; vertical-align:middle; font-size:16px; font-weight:bold; font-family:Tahoma,Arial,Helvetica;}
+.login .login_right .login_box li select { width:190px; border:1px #ccc solid; height:26px; line-height:26px; background-color:#fff; vertical-align:middle; font-size:16px; font-weight:bold; font-family:Tahoma,Arial,Helvetica;}
+.login .login_right .login_box li a { margin-left:5px;}
+.login .login_right .login_box li.btnBox span { display:inline; margin-left:55px;}
+.login .login_right .login_box li.btnBox a { margin:0;}

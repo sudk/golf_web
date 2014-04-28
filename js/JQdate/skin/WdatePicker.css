@@ -1,0 +1,9 @@
+.Wdate{
+	font-family:Tahoma;
+	border:#ddd 1px solid;
+	height:22px;
+	line-height:22px;
+	padding-left:5px;
+	background:#fff url(datePicker.gif) no-repeat right;
+	cursor:pointer;
+}

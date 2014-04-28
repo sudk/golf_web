@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* nav_bg.png > 主导航背景
+--------------------------------------------------------------------*/
+.nav, .nav-cnt, .nav-cnt ul, .current .name, .current strong, .master .name:hover, .master .name:hover strong, .subnav .current a,.subnav .current span,.subnav a:hover,.subnav a:hover span,.current a.name:hover
+{ background:transparent url("../images/nav_bg.png") no-repeat;}
+.nav { background-position:0 -160px; background-repeat:repeat-x;}
+.nav-cnt ul { background-position:right -80px;}
+.master .name:hover strong { background-position:right -345px;}
+.master .name:hover, .master .name:active { background-position:0 -310px;}
+.subnav a:hover { background-position:0 -435px;}
+.subnav a:hover span{ background-position:right -463px;}
+.current .name { background-position:0 -240px!important;}
+.current strong { background-position:right -275px!important;}
+.current .name:hover, .current .name:active{ background-position:0 -240px;}
+.subnav .current a { background-position:0 -379px!important;}
+.subnav .current a span { background-position:right -407px!important;}
+
+
+/* button_bg > 系统按钮
+--------------------------------------------------------------------*/
+.sBtn a.left, .sBtn-cancel a.left, .sBtn a.right, .sBtn-cancel a.right, .sBtn a.left-hover, .sBtn a.right-hover, .sBtn-cancel a.left-hover, .sBtn-cancel a.right-hover
+{ background:transparent url("../images/button_bg.png") no-repeat;}
+.sBtn a.right { background-position:right -148px;}
+.sBtn-cancel a.left { background-position:0 -74px;}
+.sBtn-cancel a.right { background-position:right -222px;}
+.sBtn a.left-hover { background-position:0 -37px;}
+.sBtn a.right-hover { background-position:right -185px;}
+.sBtn-cancel a.left-hover { background-position:0 -111px;}
+.sBtn-cancel a.right-hover { background-position:right -259px;}
+
+/* button_bg > 系统小按钮
+--------------------------------------------------------------------*/
+.smBtn a.left, .smBtn-cancel a.left, .smBtn a.right, .smBtn-cancel a.right, .smBtn a.left-hover, .smBtn a.right-hover, .smBtn-cancel a.left-hover, .smBtn-cancel a.right-hover
+{ background:transparent url("../images/s_button_bg.png") no-repeat;}
+.smBtn a.right { background-position:right -112px;}
+.smBtn-cancel a.left { background-position:0 -56px;}
+.smBtn-cancel a.right { background-position:right -168px;}
+.smBtn a.left-hover { background-position:0 -28px;}
+.smBtn a.right-hover { background-position:right -140px;}
+.smBtn-cancel a.left-hover { background-position:0 -84px;}
+.smBtn-cancel a.right-hover { background-position:right -196px;}
+
+
+/* x_bg.png > 水平循环背景
+--------------------------------------------------------------------*/
+.title, .lc-title, .rc-title, .lc-app-title, .lc-app-title-hover, .rc-app-title, .column-app-title:hover, .input_text, .tool-box
+{ background:url(../images/x_bg.gif) repeat-x #fff;}
+.lc-app-title-hover { background-position:0 -43px;}
+.input_text { background-position:0 -100px;}
+.title, .tool-box { background-position:0 -165px;}
+
+
+/* ico.png > 图标
+--------------------------------------------------------------------*/
+.down_ico, .up_ico
+{ background:transparent url("../images/ico.png") no-repeat; width:16px; height:9px; overflow:hidden;}
+.up_ico { background-position:0 -10px;}
+
+/* toolBox.png
+--------------------------------------------------------------------*/
+.add_ico, .del_ico, .edit_ico, .search_ico, .mover_ico, .star_ico, .password_ico, .file_ico, .date_ico, .ok_ico, .people_ico, .stop_ico, .ing_ico, .lDel_ico, .group_ico
+{ background:url("../images/toolBox.png") no-repeat; width:16px; height:15px; display:inline-block; vertical-align:middle; margin-right:3px; overflow:hidden;}
+.del_ico { background-position:0 -16px;}
+.edit_ico { background-position:0 -32px;}
+.search_ico { background-position:0 -47px;}
+.star_ico { background-position:0 -64px;}
+.mover_ico { background-position:0 -80px;}
+.password_ico { background-position:0 -96px;}
+.file_ico { background-position:0 -112px;}
+.date_ico { background-position:0 -129px;}
+.ok_ico { background-position:0 -146px;}
+.people_ico { background-position:0 -162px;}
+.stop_ico { background-position:0 -179px;}
+.ing_ico { background-position:0 -196px;}
+.lDel_ico { background-position:0 -212px;}
+.group_ico { background-position:0 -231px;}
+
+.xls_ico{background:url("../images/icons/xls.gif") no-repeat; width:16px; height:16px; display:inline-block; vertical-align:middle; margin-right:5px; margin-left:5px;}
+
+
+/* position
+--------------------------------------------------------------------*/
+.textR { text-align:right;}
+.textL { text-align:left;}
+.textC { text-align:center;}
+.floatL { float:left;}
+.floatN { float:none;}
+.floatR { float:right;}
+.displayN { display:none;}
+
+
+/* tab
+--------------------------------------------------------------------*/
+.tab .tab-label li .tab_left, .tab .tab-label li .tab_right { background:transparent url("../images/tab.gif") no-repeat; width:2px; height:30px; overflow:hidden;}
+.tab .tab-label li .tab_right { background-position:-2px 0;}

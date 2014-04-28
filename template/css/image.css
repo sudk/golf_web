@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* nav_bg.png > 主导航背景
+--------------------------------------------------------------------*/
+.nav, .nav-cnt, .nav-cnt ul, .current .name, .current strong, .master .name:hover, .master .name:hover strong, .subnav .current a,.subnav .current span,.subnav a:hover,.subnav a:hover span,.current a.name:hover
+{ background:transparent url("../images/nav_bg.png") no-repeat;}
+.nav { background-position:0 -160px; background-repeat:repeat-x;}
+.nav-cnt ul { background-position:right -80px;}
+.master .name:hover strong { background-position:right -345px;}
+.master .name:hover, .master .name:active { background-position:0 -310px;}
+.subnav a:hover { background-position:0 -435px;}
+.subnav a:hover span{ background-position:right -463px;}
+.current .name { background-position:0 -240px!important;}
+.current strong { background-position:right -275px!important;}
+.current .name:hover, .current .name:active{ background-position:0 -240px;}
+.subnav .current a { background-position:0 -379px!important;}
+.subnav .current a span { background-position:right -407px!important;}
+
+
+/* button_bg > 系统按钮
+--------------------------------------------------------------------*/
+.sBtn a.left, .sBtn-cancel a.left, .sBtn a.right, .sBtn-cancel a.right, .sBtn a.left-hover, .sBtn a.right-hover, .sBtn-cancel a.left-hover, .sBtn-cancel a.right-hover
+{ background:transparent url("../images/button_bg.png") no-repeat;}
+.sBtn a.right { background-position:right -148px;}
+.sBtn-cancel a.left { background-position:0 -74px;}
+.sBtn-cancel a.right { background-position:right -222px;}
+.sBtn a.left-hover { background-position:0 -37px;}
+.sBtn a.right-hover { background-position:right -185px;}
+.sBtn-cancel a.left-hover { background-position:0 -111px;}
+.sBtn-cancel a.right-hover { background-position:right -259px;}
+
+
+/* x_bg.png > 水平循环背景
+--------------------------------------------------------------------*/
+.title, .lc-title, .rc-title, .lc-app-title, .lc-app-title-hover, .rc-app-title, .column-app-title:hover, .tab .tab-label .current a, .tab .tab-label li a, .tab .tab-label .li-hover a, .input_text, .tool-box
+{ background:url(../images/x_bg.gif) repeat-x #fff;}
+.lc-app-title-hover { background-position:0 -43px;}
+.tab .tab-label li a { background-position:0 -125px;}
+.tab .tab-label .current a, .tab .tab-label .li-hover a { background-position:0 -86px;}
+.input_text { background-position:0 -100px;}
+.title, .tool-box { background-position:0 -165px;}
+
+
+/* ico.png > 图标
+--------------------------------------------------------------------*/
+.down_ico, .up_ico
+{ background:transparent url("../images/ico.png") no-repeat; width:16px; height:9px;}
+.up_ico { background-position:0 bottom;}
+.down_ico { background-position:0 0;}

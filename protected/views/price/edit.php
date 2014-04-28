@@ -1,0 +1,5 @@
+<div id="content"  style="width:700px;padding-top: 30px;">
+    <div class="tab-main" id="form-container">
+            <?php $this->renderPartial('_form', array('model' => $model, 'msg' => $msg,'detail_rows'=>$detail_rows,'__model__'=>'edit'));?>
+    </div>
+</div>

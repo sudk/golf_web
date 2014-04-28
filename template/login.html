@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>衡阳联通平安校园电子安防平台</title>
+<link href="css/frame_reset.css" rel="stylesheet" type="text/css" />
+<link href="css/frame_layout.css" rel="stylesheet" type="text/css" />
+<link href="css/image.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.overall.js"></script>
+</head>
+
+<body>
+<!-- header start -->
+<div id="header">
+    <div id="header-top">
+        <div class="floatL"><img src="images/logo.gif" /></div>
+        <div >
+            ad
+        </div>
+    </div>
+    <div id="nav" class="nav nav-nosub">
+        <div class="nav-cnt">
+            <ul>
+                <li class="master current">
+                    <a class="name" href="#"><strong>首页</strong></a>
+                </li>
+                <li class="master">
+                    <a class="name" href="#"><strong>功能介绍</strong></a>
+                </li>
+                <li class="separator"> | </li>
+                <li class="master">
+                    <a class="name" href="#"><strong>帮助建议</strong></a>
+                </li>
+                <li class="master">
+                    <a class="name" href="#"><strong>客服中心</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- content start -->
+<div id="content" class="login">
+	<div class="login_left">
+    	<img src="images/login/ad_1.jpg" id="ad" />
+    </div>
+    <div class="login_right">
+    	<div class="title">
+        	<a class="air_1" id="tab_1">教师登陆</a>
+            <a id="tab_2">管理员登陆</a>
+        </div>
+        <ul id="tab_1_main" class="login_box">
+        	<li>
+                <span class="name">用户名</span>
+                <input type="text" class="input_text" />
+            </li>
+        	<li>
+                <span class="name">密&nbsp;&nbsp;&nbsp;码</span>
+                <input type="password" class="input_text" />
+            </li>
+            
+        	<li>
+                <span class="name">验证码</span>
+                <input type="text" class="input_text" style="width:80px;" />
+                <img src="images/login/untitled.bmp" style="vertical-align:middle;" />
+                <a href="#">换一张</a>
+            </li>
+            <li class="btnBox">
+                <span class="sBtn">
+                    <a class="left">&nbsp;&nbsp;登&nbsp;&nbsp;陆&nbsp;&nbsp;</a><a class="right"></a>
+                    <a href="#">忘记密码?</a>
+                </span>
+            </li>
+            <li><p>提示：请在安全的情况下登陆和使用本系统，如果遇到什么问题请查看<a href="#">帮助中心</a></p></li>
+        </ul>
+        <ul id="tab_2_main" class="login_box" style="display:none;">
+        	<li>
+                <span class="name">管理员</span>
+                <input type="text" class="input_text" />
+            </li>
+        	<li>
+                <span class="name">密&nbsp;&nbsp;&nbsp;码</span>
+                <input type="password" class="input_text" />
+            </li>            
+        	<li>
+                <span class="name">验证码</span>
+                <input type="text" class="input_text" style="width:80px;" />
+                <img src="images/login/untitled.bmp" style="vertical-align:middle;" />
+                <a href="#">换一张</a>
+            </li>
+            <li class="btnBox">
+                <span class="sBtn">
+                    <a class="left">&nbsp;&nbsp;登&nbsp;&nbsp;陆&nbsp;&nbsp;</a><a class="right"></a>
+                    <a href="#">忘记密码?</a>                
+                </span>
+            </li>
+            <li><p>提示：如果遇到什么问题请查看<a href="#">帮助中心</a></p></li>
+        </ul>
+    </div>
+</div>
+<!-- content end -->
+
+<!-- footer start -->
+<div id="footer">Copyright © 2011 by 创博股份. All Rights Reserved</div>
+<!-- footer end -->
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#tab_1').click(function(){
+		$(this).addClass('air_1');
+		$('#tab_2').removeClass('air_2');
+		$('#tab_1_main').show();
+		$('#tab_2_main').hide();
+		$('#ad').attr('src','images/login/ad_1.jpg');
+	})
+	$('#tab_2').click(function(){
+		$(this).addClass('air_2');
+		$('#tab_1').removeClass('air_1');
+		$('#tab_2_main').show();
+		$('#tab_1_main').hide();
+		$('#ad').attr('src','images/login/ad_2.jpg');
+	})
+});
+</script>

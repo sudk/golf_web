@@ -1,0 +1,67 @@
+#windownbg {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;/*body-bg*/
+	top: 0;
+	left: 0;
+}
+#windown-box {
+	position: fixed;
+	_position: absolute;/*For IE 6.0*/
+	border: 5px solid #767576;
+	background: #fff;
+	text-align: left;
+}
+#windown-title {
+	position: relative;
+	height: 36px;
+	overflow: hidden;
+	background: url(bg.gif) 0 0 repeat-x;
+}
+#windown-title h2 {
+	position: relative;
+	left: 10px;
+	font-size: 14px;
+	color: #666;
+	top:10px;
+}
+#windown-close, #windown-close:hover {
+	position: absolute;
+	right: 10px;
+	top: 11px;
+	width: 13px;
+	height: 13px;
+	text-indent: -10em;
+	overflow: hidden;
+	background: url(icon.gif) 0 0 no-repeat;
+	cursor: pointer;
+}
+#windown-close:hover {
+	background: url(icon.gif) 0 -14px no-repeat;
+}
+#windown-content-border {
+	position: relative;
+	top: -1px;
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	background: url(bg.gif) 0 -50px repeat-x;
+	background-color:#fff;
+}
+#windown-content {
+	position: relative;
+	overflow: auto;
+	text-align: center;
+}
+#windown-content img,#windown-content iframe{
+	display: block;
+}
+#windown-content .loading {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -8px;
+	margin-top: -8px;
+}
+
